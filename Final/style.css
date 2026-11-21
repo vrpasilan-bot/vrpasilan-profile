@@ -1,0 +1,119 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #38bdf8;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.4rem;
+  margin-top: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+p, li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.project-card {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 0.9rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header, main, footer {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
